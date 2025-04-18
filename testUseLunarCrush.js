@@ -3,13 +3,13 @@ const LunarCrush = require('./LunarCrush');
 
 async function testLunarCrush() {
   console.log(process.env.MONGO_URL);
-  console.log(process.env.LUNARCRUSH_API_KEY);
+
 
   // Initialize LunarCrush instance with custom configuration
   const lunarCrush = new LunarCrush({
     mongoUrl: process.env.MONGO_URL || 'mongodb://localhost:27017/crypto_db',
     collectionName: 'lunarcrush_test',
-    apiKey: process.env.LUNARCRUSH_API_KEY,
+
   });
 
   try {

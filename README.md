@@ -58,7 +58,7 @@ cp .env.example .env
 
 ```env
 MONGO_URL=mongodb://localhost:27017/crypto_db
-LUNARCRUSH_API_KEY=your_api_key_here
+
 ```
 
 ### Usage Example
@@ -69,7 +69,7 @@ const LunarCrush = require('./LunarCrush');
 const lunarCrush = new LunarCrush({
   mongoUrl: 'mongodb://localhost:27017/crypto_db',
   collectionName: 'lunarcrush_data',
-  apiKey: 'your_api_key_here',
+
 });
 
 // Initialize and fetch data
